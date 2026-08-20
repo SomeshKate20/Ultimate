@@ -1,10 +1,6 @@
-Absolutely. I checked the actual repository structure. It is a **Unity project** containing `Assets`, `EasyRoads3Dv3`, `RoadArchitect/TerrainHistory`, `Packages`, and `ProjectSettings`. ([GitHub][1])
-
-The current README is quite generic. For a proper GitHub portfolio/project README, I’d use something like this:
-
 # Ultimate
 
-> A Unity-based environment and road development project featuring terrain and road-design tools for creating detailed 3D environments.
+> A Unity-based 3D environment and road-development project exploring terrain, road networks, and environment creation using Unity, EasyRoads3D, and RoadArchitect.
 
 [![Unity](https://img.shields.io/badge/Engine-Unity-black?logo=unity)](https://unity.com/)
 [![C#](https://img.shields.io/badge/Language-C%23-239120?logo=csharp\&logoColor=white)](https://learn.microsoft.com/en-us/dotnet/csharp/)
@@ -12,13 +8,43 @@ The current README is quite generic. For a proper GitHub portfolio/project READM
 
 ---
 
-## 📖 About the Project
+## 🎮 Demo
 
-**Ultimate** is a Unity project focused on building and experimenting with detailed 3D environments using road and terrain generation tools.
+**Play the project on itch.io:**
 
-The project combines Unity's development environment with tools such as **EasyRoads3D** and **RoadArchitect** to create and manage roads, terrain, and other environment elements.
+👉 [Ultimate — itch.io](https://somesh20.itch.io/ultimate)
 
-The repository contains the Unity project files, assets, packages, project settings, and supporting tools required to continue development.
+> A playable build/demo can be added here when available.
+
+---
+
+## 📸 Screenshots
+
+### Main Menu
+
+![Ultimate Street Racer - Main Menu](docs/screenshots/main-menu.jpeg)
+
+### Select Mode
+
+![Ultimate Street Racer - Select Mode](docs/screenshots/select-mode.jpeg)
+
+### Car Selection
+
+![Ultimate Street Racer - Car Selection](docs/screenshots/car-selection.jpeg)
+
+### Gameplay
+
+![Ultimate Street Racer - Gameplay](docs/screenshots/gameplay.jpeg)
+
+---
+
+## 📖 About
+
+**Ultimate** is a Unity project focused on 3D environment and road development.
+
+The project combines Unity with road and terrain development tools such as **EasyRoads3D** and **RoadArchitect**. It provides a foundation for experimenting with roads, terrain, environments, assets, and potential gameplay systems.
+
+The repository contains the Unity project, assets, packages, project configuration, and supporting development resources.
 
 ---
 
@@ -27,23 +53,23 @@ The repository contains the Unity project files, assets, packages, project setti
 * 🌍 3D environment development
 * 🛣️ Road creation and editing
 * 🏔️ Terrain-based environment development
-* 🧩 Unity asset and prefab integration
+* 🧩 Unity assets and prefab integration
 * 🛠️ EasyRoads3D integration
 * 🏗️ RoadArchitect integration
 * 📦 Unity Package Manager support
-* 🎮 Designed for further gameplay and environment development
+* 🎮 Foundation for future gameplay development
 
 ---
 
-## 🛠️ Technologies & Tools
+## 🛠️ Tech Stack
 
 | Technology        | Purpose                                   |
 | ----------------- | ----------------------------------------- |
-| **Unity**         | Game and 3D environment development       |
+| **Unity**         | 3D environment and project development    |
 | **C#**            | Scripting and gameplay logic              |
-| **EasyRoads3D**   | Road and environment creation             |
+| **EasyRoads3D**   | Road creation and environment development |
 | **RoadArchitect** | Road and terrain development              |
-| **Git / GitHub**  | Version control and project collaboration |
+| **Git / GitHub**  | Version control                           |
 
 ---
 
@@ -53,14 +79,17 @@ The repository contains the Unity project files, assets, packages, project setti
 Ultimate/
 │
 ├── Assets/
-│   └── Main Unity assets, scenes, scripts, materials,
-│       models, prefabs and other project resources
+│   ├── Scenes/
+│   ├── Scripts/
+│   ├── Prefabs/
+│   ├── Materials/
+│   └── Other Unity assets
 │
 ├── EasyRoads3Dv3/
-│   └── EasyRoads3D integration
+│   └── EasyRoads3D resources
 │
 ├── RoadArchitect/
-│   └── Road and terrain development resources
+│   └── Road and terrain resources
 │
 ├── Packages/
 │   └── Unity Package Manager dependencies
@@ -70,21 +99,21 @@ Ultimate/
 │
 ├── .gitignore
 ├── .vsconfig
-└── Readme.md
+└── README.md
 ```
 
 ---
 
 ## 💻 Requirements
 
-Before opening the project, make sure you have:
+Before opening the project, install:
 
 * **Unity Hub**
-* **Unity Editor** compatible with the project
-* **Visual Studio** or another C# compatible IDE
+* **Unity Editor**
 * **Git**
+* **Visual Studio** or another C# compatible IDE
 
-### Recommended
+### Unity Version
 
 Use the Unity version specified in:
 
@@ -92,7 +121,7 @@ Use the Unity version specified in:
 ProjectSettings/ProjectVersion.txt
 ```
 
-Using the same Unity version as the project helps prevent compatibility and asset-import issues.
+Using the same Unity version helps avoid compatibility and asset-import problems.
 
 ---
 
@@ -112,80 +141,94 @@ Open **Unity Hub** and select:
 Add → Add project from disk
 ```
 
-Then select the cloned `Ultimate` folder.
+Select the cloned `Ultimate` directory.
 
-### 3. Select the Unity Version
+### 3. Select the Correct Unity Version
 
-Open the project using the Unity version specified in:
+Check:
 
 ```text
 ProjectSettings/ProjectVersion.txt
 ```
 
+and open the project using the corresponding Unity Editor version.
+
 ### 4. Open the Project
 
-Allow Unity to import and process the project assets and packages.
+Allow Unity to import the project's assets and packages.
 
-The first import may take some time depending on your system and the number of assets.
+> The first import may take some time depending on your hardware and the number of project assets.
 
----
+### 5. Run the Project
 
-## 🎮 Working With the Project
+Open one of the available scenes from the `Assets` folder and press:
 
-After opening the project:
+**▶ Play**
 
-1. Open the `Assets` folder.
-2. Locate the available scenes.
-3. Open the scene you want to work with.
-4. Check the required GameObjects, prefabs, scripts, and environment assets.
-5. Press **Play** in the Unity Editor to test the project.
+inside the Unity Editor.
 
 ---
 
 ## 🛣️ Road & Terrain Development
 
-The project includes resources related to:
-
 ### EasyRoads3D
 
-EasyRoads3D can be used to create and edit roads and integrate them with Unity environments.
+The project includes **EasyRoads3D** resources for road creation and environment development.
+
+It can be used to create road networks and integrate roads with surrounding terrain.
 
 ### RoadArchitect
 
-RoadArchitect resources are included for road and terrain-related development.
+The project also contains **RoadArchitect** resources related to road and terrain development.
 
-These tools can be used to create more realistic road networks and environment layouts.
+These tools provide additional capabilities for experimenting with road layouts and environment design.
+
+---
+
+## 🎯 Project Goals
+
+The project can serve as a foundation for developing a larger interactive environment.
+
+Potential areas of development include:
+
+* Environment design
+* Road networks
+* Terrain generation
+* Vehicle gameplay
+* Character movement
+* Exploration systems
+* Lighting and visual improvements
+* Performance optimization
 
 ---
 
 ## 🔮 Future Improvements
 
-Possible future improvements include:
-
-* [ ] Add more detailed environments
-* [ ] Improve terrain quality
+* [ ] Expand the environment
+* [ ] Improve terrain detail
 * [ ] Add additional road networks
-* [ ] Add vehicle or character movement
+* [ ] Add vehicle controls
+* [ ] Add character movement
 * [ ] Add gameplay mechanics
 * [ ] Improve lighting and post-processing
-* [ ] Optimize environment performance
-* [ ] Add UI elements
-* [ ] Create a playable build
-* [ ] Add project screenshots and videos
-* [ ] Provide downloadable releases
+* [ ] Optimize scene performance
+* [ ] Add UI systems
+* [ ] Create additional playable builds
+* [ ] Add project screenshots and gameplay videos
 
 ---
 
 ## 🧹 Development Guidelines
 
-When contributing to the project:
+When working on the project:
 
-* Use a compatible Unity version.
-* Keep scenes and assets organized.
+* Use the Unity version specified by the project.
+* Keep scenes, scripts, prefabs, and assets organized.
 * Avoid committing Unity-generated temporary files.
-* Use descriptive names for scripts, GameObjects, scenes, and assets.
-* Make small and meaningful commits.
-* Test changes in Unity before pushing them.
+* Use descriptive names for GameObjects, scripts, scenes, and assets.
+* Make focused and meaningful commits.
+* Test changes inside Unity before pushing them.
+* Check third-party asset licenses before redistribution.
 
 ---
 
@@ -193,13 +236,13 @@ When contributing to the project:
 
 Contributions and improvements are welcome.
 
-### Contribution Workflow
+### Development Workflow
 
 ```bash
 # Clone the repository
 git clone https://github.com/SomeshKate20/Ultimate.git
 
-# Create a new branch
+# Create a feature branch
 git checkout -b feature/your-feature
 
 # Make your changes
@@ -207,24 +250,38 @@ git checkout -b feature/your-feature
 # Stage changes
 git add .
 
-# Commit changes
+# Commit your changes
 git commit -m "Add your feature"
 
 # Push the branch
 git push origin feature/your-feature
 ```
 
-Then create a **Pull Request** on GitHub.
+Then open a **Pull Request** on GitHub.
+
+---
+
+## 📦 Third-Party Tools & Assets
+
+This project includes or references third-party development tools, including:
+
+* **EasyRoads3D**
+* **RoadArchitect**
+* Unity packages and other third-party assets included within the project
+
+Third-party software and assets may have their own licenses and usage restrictions.
+
+Please review the applicable licenses before redistributing the project or its assets.
 
 ---
 
 ## 📄 License
 
-This project currently does not contain a dedicated `LICENSE` file.
+This repository currently does not include a dedicated `LICENSE` file.
 
-If you intend to distribute this project publicly or allow others to reuse the source code, add an appropriate open-source license.
+Until a license is added, the project's source code should not be assumed to be freely reusable or redistributable.
 
-> **Note:** Third-party assets and tools included in the project may have their own licenses and usage restrictions. Check their respective licenses before redistributing them.
+If you plan to make the project open source, consider adding an appropriate license such as MIT, Apache-2.0, or another license that matches your intended usage.
 
 ---
 
@@ -233,30 +290,30 @@ If you intend to distribute this project publicly or allow others to reuse the s
 ### Somesh Kate
 
 GitHub:
-[https://github.com/SomeshKate20](https://github.com/SomeshKate20)
-
-Project Repository:
-[https://github.com/SomeshKate20/Ultimate](https://github.com/SomeshKate20/Ultimate)
+https://github.com/SomeshKate20
 
 ---
 
-## ⭐ Support
+## 🔗 Links
 
-If you find this project useful or interesting, consider giving the repository a ⭐ on GitHub.
+**GitHub Repository**
+
+https://github.com/SomeshKate20/Ultimate
+
+**Playable Demo**
+
+https://somesh20.itch.io/ultimate
 
 ---
 
 ## 📌 Project Status
 
-**Status:** 🚧 In Development
+**🚧 In Development**
 
-This project is actively available for further development, experimentation, and improvement.
+Ultimate is an ongoing Unity environment and road-development project that can be expanded with additional environments, gameplay systems, vehicles, and interactive features.
 
 ---
 
-### 🔗 Repository
+## ⭐ Support
 
-**Ultimate:**
-[https://github.com/SomeshKate20/Ultimate](https://github.com/SomeshKate20/Ultimate)
-
-[1]: https://github.com/SomeshKate20/Ultimate "GitHub - SomeshKate20/Ultimate · GitHub"
+If you find the project interesting, consider giving the repository a ⭐ on GitHub.
